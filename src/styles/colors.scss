@@ -1,0 +1,16 @@
+.--color {
+
+  &-bg {
+
+    &-female {
+      background-color: $purple;
+    }
+    &-male {
+      background-color: $beige;
+    }
+    &-total {
+      background-color: $gray-dark;
+    }
+  }
+
+}

@@ -1,0 +1,44 @@
+@include cssPrefix('accordion-legend') {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 40px;
+
+  @include bp-xs {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  @include bp-sm {
+    width: 75%;
+    margin-left: 25%;
+  }
+
+  &__container {
+    @include bp-sm {
+      margin-left: 15px;
+      position: relative;
+    }
+  }
+
+  &__item {
+    position: absolute;
+    top: 0px;
+    font-size: 14px;
+
+    &--f {
+      left: 0px;
+    }
+
+    &--m {
+      right: 0px;
+    }
+
+    &__square {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+}

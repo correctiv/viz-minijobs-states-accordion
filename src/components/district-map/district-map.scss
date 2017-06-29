@@ -1,0 +1,20 @@
+@import './district-map-legend.scss' ;
+
+@include cssPrefix('district-map') {
+  display: block;
+  width: 100%;
+
+  &__d3-container {
+    padding: 15px 15px 0px 15px;
+
+    @include bp-sm {
+      max-width: 300px;
+    }
+  }
+
+  &__path {
+    stroke: $white;
+    stroke-width: 3px;
+  }
+
+}

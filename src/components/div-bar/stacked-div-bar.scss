@@ -1,0 +1,13 @@
+@include cssPrefix('stacked-div'){
+  position: relative;
+  display: block;
+  float: left;
+  height: 30px;
+
+  &__label {
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    line-height: 30px;
+  }
+}

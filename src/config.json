@@ -1,0 +1,60 @@
+{
+  "global": {
+    "cssNamespace": "mjsa",
+    "breakpoints": {
+      "small": 600,
+      "medium": 768,
+      "large": 1280
+    }
+  },
+  "states": [{
+    "id": "01",
+    "name": "Schleswig-Holstein"
+  }, {
+    "id": "02",
+    "name": "Hamburg"
+  }, {
+    "id": "03",
+    "name": "Niedersachsen"
+  }, {
+    "id": "04",
+    "name": "Bremen"
+  }, {
+    "id": "05",
+    "name": "Nordrhein-Westfalen"
+  }, {
+    "id": "06",
+    "name": "Hessen"
+  }, {
+    "id": "07",
+    "name": "Rheinland-Pfalz"
+  }, {
+    "id": "08",
+    "name": "Baden-Württemberg"
+  }, {
+    "id": "09",
+    "name": "Bayern"
+  }, {
+    "id": "10",
+    "name": "Saarland"
+  }, {
+    "id": "11",
+    "name": "Berlin"
+  }, {
+    "id": "12",
+    "name": "Brandenburg"
+  }, {
+    "id": "13",
+    "name": "Mecklenburg-Vorpommern"
+  }, {
+    "id": "14",
+    "name": "Sachsen"
+  }, {
+    "id": "15",
+    "name": "Sachsen-Anhalt"
+  }, {
+    "id": "16",
+    "name": "Thüringen"
+  }]
+}
+
