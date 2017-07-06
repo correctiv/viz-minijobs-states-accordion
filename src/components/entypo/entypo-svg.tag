@@ -1,6 +1,7 @@
 const symbols = {
   download: require('raw!./download.svg'),
-  info: require('raw!./info-with-circle.svg')
+  info: require('raw!./info-with-circle.svg'),
+  close: require('raw!./circle-with-cross.svg')
 }
 
 <entypo-svg class="entypo-svg">

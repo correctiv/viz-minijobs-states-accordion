@@ -56,14 +56,15 @@
       width: 70%;
     }
 
-    .entypo-svg {
-      position: absolute;
-      right: 0;
+  }
 
-      svg {
-        fill: $gray-dark;
-      }
+  &__info-container {
+
+    @include bp-sm {
+      margin-left: 25%;
+      padding-left: 15px;
     }
+
   }
 
   &__info-section {
@@ -74,11 +75,6 @@
     margin-top: 10px;
     position: relative;
     @include transition(all);
-
-    @include bp-sm {
-      margin-left: 25%;
-      padding-left: 15px;
-    }
 
     &__section {
       display: block;
@@ -99,5 +95,20 @@
     @include transition(all);
     height: auto;
     opacity: 1;
+  }
+
+  &__info-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    svg {
+      fill: $gray;
+    }
+  }
+
+  &.-active &__info-btn svg {
+    fill: $female-color;
   }
 }

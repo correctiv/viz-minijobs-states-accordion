@@ -2,7 +2,7 @@
   display: block;
   width: 100%;
   position: relative;
-  height: 40px;
+  padding-bottom: 50px;
 
   @include bp-xs {
     width: 50%;
@@ -28,6 +28,7 @@
 
     &--f {
       left: 0px;
+      margin-right: 100px;
     }
 
     &--m {

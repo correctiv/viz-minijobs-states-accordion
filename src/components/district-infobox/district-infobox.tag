@@ -7,8 +7,7 @@ import '../entypo/entypo-svg.tag'
   </header>
 
   <section class={ getClass('section') }>
-    <h4 class={ getClass('section__title') }>Anteil der Minijobber</h4>
-    <span class={ getClass('annotation') }>Anteil der <strong>ausschließlich geringfügig Beschäftigten</strong> an der Gesamtbevölkerung</span>
+    <span class={ getClass('annotation') }>Anteil der <strong>ausschließlich</strong> geringfügig Beschäftigten an der jeweiligen Gruppe bzw. Gesamtbevölkerung</span>
     <dl>
       <dt>{ opts.data.f_main_rel }&nbsp;%</dt>
       <dt class="-small">{ opts.data.f_main }</dt>

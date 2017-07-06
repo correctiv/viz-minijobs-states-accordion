@@ -12,16 +12,19 @@ import '../entypo/entypo-svg.tag'
   </header>
   <div class={ getClass('bar-wrapper') } onclick={ parent.onClick }>
     <stacked-div-bar values={ stackedValues } ratio={ parent.ratio / 2 }/>
-    <entypo-svg symbol="info" />
   </div>
   <span class='-clear-' />
-  <section class={ getClass('info-section') }>
-    <button onclick={ parent.onClick } class={ getClass('info-section__close-btn') } />
-    <section class={ getClass('info-section__section') }>
-      <district-map ref='district-map' data={ opts.data } />
-    </section>
-    <section class={ getClass('info-section__section') }>
-      <district-infobox ref='district-infobox' data={ opts.data } state={ opts.state } />
+  <div class={ getClass('info-btn') } onclick={ parent.onClick }>
+    <entypo-svg symbol={ opts.active ? 'close' : 'info' }/>
+  </div>
+  <section class={ getClass('info-container') }>
+    <section class={ getClass('info-section') }>
+      <section class={ getClass('info-section__section') }>
+        <district-map ref='district-map' data={ opts.data } />
+      </section>
+      <section class={ getClass('info-section__section') }>
+        <district-infobox ref='district-infobox' data={ opts.data } state={ opts.state } />
+      </section>
     </section>
   </section>
 
