@@ -2,21 +2,18 @@
   display: block;
   width: 100%;
   position: relative;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 
   @include bp-xs {
     width: 50%;
     margin-left: 50%;
+    padding-bottom: 55px;
   }
 
   @include bp-sm {
     width: 75%;
     margin-left: 25%;
-    padding-bottom: 50px;
-
-    @include bp-md {
-      padding-bottom: 40px;
-    }
+    padding-bottom: 40px;
   }
 
   &__container {
