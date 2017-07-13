@@ -9,17 +9,17 @@ import '../entypo/entypo-svg.tag'
   <section class={ getClass('section') }>
     <span class={ getClass('annotation') }><strong>Ausschließlich</strong> geringfügig Beschäftigte (25-65 Jahre)</span>
     <dl>
-      <dt>{ opts.data.f_main_rel }&nbsp;%</dt>
+      <dt>{ _f(opts.data.f_main_rel) }&nbsp;%</dt>
       <dt class="-small">{ opts.data.f_main }</dt>
       <dd class="badge --color-bg-female">Frauen</dd>
     </dl>
     <dl>
-      <dt>{ opts.data.m_main_rel }&nbsp;%</dt>
+      <dt>{ _f(opts.data.m_main_rel) }&nbsp;%</dt>
       <dt class="-small">{ opts.data.m_main }</dt>
       <dd class="badge --color-bg-male">Männer</dd>
     </dl>
     <dl>
-      <dt>{ opts.data.t_main_rel }&nbsp;%</dt>
+      <dt>{ _f(opts.data.t_main_rel) }&nbsp;%</dt>
       <dt class="-small">{ opts.data.t_main }</dt>
       <dd class="badge --color-bg-total">Gesamt</dd>
     </dl>
@@ -44,5 +44,5 @@ import '../entypo/entypo-svg.tag'
     </span>
   </section>
 
-  this.getUrl = (suffix, format) => `./data/minijobs_${this.opts.state.slug}_${suffix}.${format}`
+  this.getUrl = (suffix, format) => `${this.opts.path}/data/minijobs_${this.opts.state.slug}_${suffix}.${format}`
 </district-infobox>

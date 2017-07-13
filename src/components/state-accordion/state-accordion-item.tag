@@ -7,7 +7,7 @@ import '../entypo/entypo-svg.tag'
 
   <header class={ getClass('header') } onclick={ parent.onClick }>
     <h3 class={ getClass('header__title') }>{ opts.state.name }</h3>
-    <span class={ getClass('header__subtitle') }>Insgesamt: { opts.data.t_all_rel }&nbsp;%</span>
+    <span class={ getClass('header__subtitle') }>Insgesamt: { _f(opts.data.t_all_rel) }&nbsp;%</span>
     <span class='-clear-' />
   </header>
   <div class={ getClass('bar-wrapper') } onclick={ parent.onClick }>
@@ -23,7 +23,12 @@ import '../entypo/entypo-svg.tag'
         <district-map ref='district-map' data={ opts.data } />
       </section>
       <section class={ getClass('info-section__section') }>
-        <district-infobox ref='district-infobox' data={ opts.data } state={ opts.state } />
+        <district-infobox
+          ref='district-infobox'
+          data={ opts.data }
+          state={ opts.state }
+          path={ opts.path }
+        />
       </section>
     </section>
   </section>

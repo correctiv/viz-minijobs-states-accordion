@@ -8,6 +8,7 @@ import './state-accordion-item.tag'
     state={ state }
     active={ parent.active === state.id}
     data={ parent.getData(state.id) }
+    path={ parent.opts.config.path }
   />
 
   this.statesData = this.opts.data.statesData
