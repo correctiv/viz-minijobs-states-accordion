@@ -3,6 +3,12 @@
   width: 100%;
   padding: 0px 15px 15px 15px;
 
+  @include bp-xs {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+  }
+
   &__list {
     margin: 0;
     padding: 0;

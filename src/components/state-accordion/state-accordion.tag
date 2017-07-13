@@ -4,10 +4,10 @@ import './state-accordion-item.tag'
 <state-accordion class={ getClass() }>
   <state-accordion-item
     ref='state-accordion-item'
-    each={ states }
-    state={ name }
-    active={ parent.active === id}
-    data={ parent.getData(id) }
+    each={ state in states }
+    state={ state }
+    active={ parent.active === state.id}
+    data={ parent.getData(state.id) }
   />
 
   this.statesData = this.opts.data.statesData
@@ -16,10 +16,11 @@ import './state-accordion-item.tag'
     return this.statesData[b.id].t_all_rel - this.statesData[a.id].t_all_rel
   })
 
-  this.ratio = 100 / d3.max(Object.keys(this.opts.data.statesData).map(k => +this.opts.data.statesData[k].t_all_rel))
+  this.ratio = 100 / d3.max(Object.keys(this.opts.data.statesData).
+    map(k => +this.opts.data.statesData[k].t_all_rel))
 
   this.onClick = ({item}) => {
-    const active = this.active === item.id ? null : item.id
+    const active = this.active === item.state.id ? null : item.state.id
     this.update({active})
   }
 

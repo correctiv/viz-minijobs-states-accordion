@@ -1,5 +1,6 @@
 @include cssPrefix('district-infobox') {
   display: block;
+  position: relative;
   width: 100%;
 
   .-clear- {
@@ -46,7 +47,9 @@
     width: 100%;
 
     &__title {
-      margin: 0;
+      color: $gray-dark;
+      margin-top: 10px;
+      margin-bottom: 0;
       font-family: $font-neuzeit-cond;
       text-transform: uppercase;
       font-size: 16px;
@@ -90,12 +93,12 @@
   }
 
   &__download-url {
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 0px;
+    margin-right: 10px;
     margin-bottom: 10px;
     display: inline-block;
     float: left;
-    font-size: 14px;
+    font-size: 13px;
     padding: 5px 10px 5px 10px !important;
     border: none !important;
     color: $white;

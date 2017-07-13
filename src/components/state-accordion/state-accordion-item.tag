@@ -6,7 +6,7 @@ import '../entypo/entypo-svg.tag'
 <state-accordion-item class="{ getClass() } { -active: opts.active }">
 
   <header class={ getClass('header') } onclick={ parent.onClick }>
-    <h3 class={ getClass('header__title') }>{ opts.state }</h3>
+    <h3 class={ getClass('header__title') }>{ opts.state.name }</h3>
     <span class={ getClass('header__subtitle') }>Insgesamt: { opts.data.t_all_rel }&nbsp;%</span>
     <span class='-clear-' />
   </header>

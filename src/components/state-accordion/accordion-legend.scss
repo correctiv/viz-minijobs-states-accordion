@@ -2,7 +2,7 @@
   display: block;
   width: 100%;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 
   @include bp-xs {
     width: 50%;
@@ -12,6 +12,11 @@
   @include bp-sm {
     width: 75%;
     margin-left: 25%;
+    padding-bottom: 50px;
+
+    @include bp-md {
+      padding-bottom: 40px;
+    }
   }
 
   &__container {
