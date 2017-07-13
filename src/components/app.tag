@@ -5,4 +5,7 @@ import './state-accordion/accordion-legend.tag'
   <accordion-legend ref='accordion-legend' />
   <state-accordion ref='state-accordion' data={ opts.data } config={ opts.config }/>
   <accordion-legend ref='accordion-legend' />
+  <section class={ getClass('annotation') }>
+    * mit Minijob als einzigem Job. Bezogen auf die jeweilige Gesamtzahl von Frauen bzw. Männern ab 15 Jahren im Bundesland.
+  </section>
 </cor-mj-states-accordion>
