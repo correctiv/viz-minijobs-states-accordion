@@ -1,7 +1,42 @@
-# Webpack Frontend Starterkit
+# viz-minijobs-states-accordion
 
-A lightweight foundation for your next webpack based frontend project.
+Display data about minijobs in german states and provide download data for cooperation partners for each state.
 
+[Preview via gh-pages](https://correctiv.github.io/viz-minijobs-states-accordion/dist/)
+
+Based on [wbkd/yet-another-webpack-es6-starterkit](https://github.com/wbkd/yet-another-webpack-es6-starterkit)
+
+Uses [d3](https://d3js.org) and [riotjs](https://riotjs.com)
+
+## base visualization setup for correctiv cms
+
+### javascript
+
+```
+dist/bundle.js
+```
+
+### styles
+
+```
+dist/styles/bundle.css
+```
+
+## for use in correctiv cms plugins:
+
+```html
+<figure class="figure -full-width">
+  <h2>Minijobs: Die Bundesländer im Vergleich</h2>
+  <div class="figure__container">
+    <div data-riot-mount="cor-mj-states-accordion"></div>
+  </div>
+  <div class="figure__credits">
+    <p><strong>Daten:</strong> <a href="">Arbeitsagentur</a></p>
+  </div>
+</figure>
+```
+
+## Development
 
 ### Installation
 
@@ -9,7 +44,7 @@ A lightweight foundation for your next webpack based frontend project.
 npm install
 ```
 
-### Start Dev Server 
+### Start Dev Server
 
 ```
 npm run dev
