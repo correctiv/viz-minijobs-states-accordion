@@ -1,7 +1,7 @@
 import '../div-bar/stacked-div-bar.tag'
 import '../district-map/district-map.tag'
 import '../district-infobox/district-infobox.tag'
-import '../entypo/entypo-svg.tag'
+// import '../entypo/entypo-svg.tag'
 
 <state-accordion-item class="{ getClass() } { -active: opts.active }">
 
@@ -14,9 +14,7 @@ import '../entypo/entypo-svg.tag'
     <stacked-div-bar values={ stackedValues } ratio={ parent.ratio / 2 }/>
   </div>
   <span class='-clear-' />
-  <div class={ getClass('info-btn') } onclick={ parent.onClick }>
-    <entypo-svg symbol={ opts.active ? 'close' : 'info' }/>
-  </div>
+  <a class={ getClass('info-btn') } onclick={ parent.onClick }>mehr</a>
   <section class={ getClass('info-container') }>
     <section class={ getClass('info-section') }>
       <section class={ getClass('info-section__section') }>

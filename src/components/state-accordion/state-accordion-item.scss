@@ -26,6 +26,12 @@
       font-size: 22px;
       line-height: 20px;
       font-family: $font-neuzeit;
+      @include transition(color);
+
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
+      }
     }
 
     &__subtitle {
@@ -102,10 +108,26 @@
     position: absolute;
     top: 0;
     right: 0;
+    font-size: 14px;
+    line-height: 14px;
 
-    svg {
-      fill: $gray;
+    @include bp-xs {
+      top: -22px;
     }
+
+    @include bp-sm {
+      top: 0px;
+    }
+
+    // .entypo-svg {
+    //   position: absolute;
+    //   right: 0;
+    //   top: 0;
+
+    //   svg {
+    //     fill: $gray;
+    //   }
+    // }
   }
 
   &.-active &__info-btn svg {

@@ -18,7 +18,7 @@ import './state-accordion-item.tag'
   })
 
   this.ratio = 100 / d3.max(Object.keys(this.opts.data.statesData).
-    map(k => +this.opts.data.statesData[k].t_all_rel))
+  map(k => +this.opts.data.statesData[k].t_all_rel))
 
   this.onClick = ({item}) => {
     const active = this.active === item.state.id ? null : item.state.id
