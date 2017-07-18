@@ -11,4 +11,16 @@
   display: block;
   width: 100%;
   font-size: 14px;
+
+  @include bp-sm {
+    width: 75%;
+    margin-left: 25%;
+  }
+
+  p {
+    @include bp-sm {
+      margin-left: 15px;
+      padding: 0;
+    }
+  }
 }
