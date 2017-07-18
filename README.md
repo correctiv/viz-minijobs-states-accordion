@@ -31,7 +31,7 @@ dist/styles/bundle.css
     <div data-riot-mount="cor-mj-states-accordion"></div>
   </div>
   <div class="figure__credits">
-    <p><strong>Daten:</strong> <a href="">Arbeitsagentur</a></p>
+    <p><strong>Daten:</strong> <a href="">Statistik der Bundesagentur für Arbeit: "Geringfügig Beschäftigte nach Geschlecht und Altersgruppen"</a>, regionale Abgrenzung nach dem Arbeitsort, eigene Berechnungen und für Bundesländer aggregiert.</p>
   </div>
 </figure>
 ```
