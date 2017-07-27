@@ -3,24 +3,24 @@ import '../entypo/entypo-svg.tag'
 <district-infobox class={ getClass() }>
   <header class={ getClass('header') }>
     <h3 class={ getClass('title') }>{ opts.state.name }</h3>
-    <span class={ getClass('population') }><strong>{ opts.data.t_total_pop }</strong>&nbsp;Einwohner</span>
+    <span class={ getClass('population') }><strong>{ _f(opts.data.t_total_pop) }</strong>&nbsp;Einwohner</span>
   </header>
 
   <section class={ getClass('section') }>
     <span class={ getClass('annotation') }><strong>Ausschließlich</strong> geringfügig Beschäftigte (25-65 Jahre)</span>
     <dl>
       <dt>{ _f(opts.data.f_main_rel) }&nbsp;%</dt>
-      <dt class="-small">{ opts.data.f_main }</dt>
+      <dt class="-small">{ _f(opts.data.f_main) }</dt>
       <dd class="badge --color-bg-female">Frauen</dd>
     </dl>
     <dl>
       <dt>{ _f(opts.data.m_main_rel) }&nbsp;%</dt>
-      <dt class="-small">{ opts.data.m_main }</dt>
+      <dt class="-small">{ _f(opts.data.m_main) }</dt>
       <dd class="badge --color-bg-male">Männer</dd>
     </dl>
     <dl>
       <dt>{ _f(opts.data.t_main_rel) }&nbsp;%</dt>
-      <dt class="-small">{ opts.data.t_main }</dt>
+      <dt class="-small">{ _f(opts.data.t_main) }</dt>
       <dd class="badge --color-bg-total">Gesamt</dd>
     </dl>
     <span class="-clear-" />

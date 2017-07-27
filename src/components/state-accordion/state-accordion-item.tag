@@ -1,7 +1,6 @@
 import '../div-bar/stacked-div-bar.tag'
 import '../district-map/district-map.tag'
 import '../district-infobox/district-infobox.tag'
-// import '../entypo/entypo-svg.tag'
 
 <state-accordion-item class="{ getClass() } { -active: opts.active }">
 
